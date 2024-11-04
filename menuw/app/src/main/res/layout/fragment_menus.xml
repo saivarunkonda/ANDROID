@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MenusFragment">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gold"
+            android:textColorHint="@color/gold"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/search_food_items_or_restaurants"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="text" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/expandable_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/search_bar"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

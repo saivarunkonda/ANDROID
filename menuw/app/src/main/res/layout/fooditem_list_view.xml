@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rv_item_background">
+
+    <TextView
+        android:id="@+id/fooditem_name_rv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_restaurant_rv_tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_item_restaurant"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_name_rv_tv"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_restaurant_rv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fooditem_restaurant"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toRightOf="@id/fooditem_restaurant_rv_tv_label"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_name_rv_tv"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_mainingredients_rv_tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fooditem_mainingredients_label"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_restaurant_rv_tv_label"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_mainingredients_rv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fooditem_mainingredients_use_comma_seperation"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:maxEms="8"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toRightOf="@id/fooditem_mainingredients_rv_tv_label"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_restaurant_rv_tv"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_price_rv_tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_label"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_mainingredients_rv_tv"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_price_rv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gold"
+        app:layout_constraintLeft_toRightOf="@id/fooditem_price_rv_tv_label"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_mainingredients_rv_tv"
+        />
+
+    <ImageView
+        android:id="@+id/fooditem_image_rv_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/restaurant_placeholder"
+        app:layout_constraintTop_toTopOf="@id/fooditem_name_rv_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

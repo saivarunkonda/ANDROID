@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/rv_item_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/fooditem_order_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/fooditem_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_name"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fooditem_order_label"
+        />
+
+    <TextView
+        android:id="@+id/restaurant_order_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_item_restaurant"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_order_label"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/restaurant_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/fooditem_order"
+        app:layout_constraintStart_toEndOf="@id/restaurant_order_label"
+        />
+
+    <TextView
+        android:id="@+id/price_order_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_label"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_order_label"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/price_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_order"
+        app:layout_constraintStart_toEndOf="@id/price_order_label"
+        />
+
+    <ImageView
+        android:id="@+id/order_list_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/food_item_placeholder_text"
+        android:src="@drawable/food_item_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

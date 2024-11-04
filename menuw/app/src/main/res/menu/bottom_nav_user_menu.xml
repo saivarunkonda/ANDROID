@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/user_menu_fragment"
+        android:icon="@drawable/ic_food_menu"
+        android:orderInCategory="110"
+        android:title="@string/restaurant_menu" />
+    <item
+        android:id="@+id/orders_fragment"
+        android:icon="@drawable/ic_checkout"
+        android:orderInCategory="111"
+        android:title="@string/checkout" />
+    <item
+        android:id="@+id/orders_history_fragment"
+        android:icon="@drawable/ic_orders"
+        android:orderInCategory="112"
+        android:title="@string/order_history" />
+</menu>

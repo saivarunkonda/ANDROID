@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MenUW" parent="android:Theme.Material.Light.NoActionBar" >
+    <item name="android:colorPrimary">@color/gold</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>
